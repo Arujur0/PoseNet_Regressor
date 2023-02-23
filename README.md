@@ -8,7 +8,7 @@ At its core, PoseNet is a convolutional neural network and uses convolutional la
 The architecture of the PoseNet consists of a series of InceptionBlocks that lead into three loss headers. Each of these loss headers predicts an xyz position and a wpqr orientation. The position is predicted as a 3D coordinate and the orientation as a Quaternion in wpqr ordering.
 
 ## Dataset 
-The neural network is trained on the KingsCollege Dataset. It is a large scale outdoor localisation dataset. It consists of video recordings and images of buildings around Cambridge University. The dataset can be downloaded from ![here](https://www.repository.cam.ac.uk/bitstream/handle/1810/251342/KingsCollege.zip).
+The neural network is trained on the KingsCollege Dataset. It is a large scale outdoor localisation dataset. It consists of video recordings and images of buildings around Cambridge University. The dataset can be downloaded from [here](https://www.repository.cam.ac.uk/bitstream/handle/1810/251342/KingsCollege.zip).
 
 ## Implementation
 
