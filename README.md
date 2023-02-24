@@ -6,6 +6,8 @@ At its core, PoseNet is a convolutional neural network and uses convolutional la
 
 ## Architecture
 The architecture of the PoseNet consists of a series of InceptionBlocks that lead into three loss headers. Each of these loss headers predicts an xyz position and a wpqr orientation. The position is predicted as a 3D coordinate and the orientation as a Quaternion in wpqr ordering.
+The architecture is as follows:
+![PoseNet Architecture](Screenshot 2023-02-08 145225.png)
 
 ## Dataset 
 The neural network is trained on the KingsCollege Dataset. It is a large scale outdoor localisation dataset. It consists of video recordings and images of buildings around Cambridge University. The dataset can be downloaded from [here](https://www.repository.cam.ac.uk/bitstream/handle/1810/251342/KingsCollege.zip).
@@ -28,6 +30,8 @@ Mean Image
 Subtracted Image
 
 ## Results
+The model was trained on a loss function that considered parameters for both position and orientation. Each of the three loss headers described in the architecture contribute to the loss, with the third loss header contributing the highest. The parameter beta, directs which of the two - positional or orientational - loss should be focused on more. Whereas the w parameter reduces the auxilliary losses.
+![Loss Function](loss.png)
 There are two evaluation metrics used for evaluation; Median Position Error and Median Orientation Error. The median position error represents the median deviation in position from the ground truth camera position in metres. The median orientation error represents the median angle devaition from the true camera orientation in degrees.
 
 The results obtained based on the above metrics are shown below:
