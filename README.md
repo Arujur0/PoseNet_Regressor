@@ -19,8 +19,8 @@ The implementation of the Pose regression archtiecture has two stages:
 2. Model Training: The PoseNet model was run for 240 epochs at a learning rate of 1e-4, with a batch size of 100. Training was optimized using the Adam Optimizer. 
 
 The mean image and an output sample from subtracting from the mean image are shown below:
-![Mean Image](mean-check.png)
-![Subtracted Image](data_check.png)
+![Mean Image](mean_check.jpg)
+![Subtracted Image](data_check.jpg)
 
 ## Results
 There are two evaluation metrics used for evaluation; Median Position Error and Median Orientation Error. The median position error represents the median deviation in position from the ground truth camera position in metres. The median orientation error represents the median angle devaition from the true camera orientation in degrees.
