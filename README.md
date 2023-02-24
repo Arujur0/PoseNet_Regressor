@@ -20,7 +20,11 @@ The implementation of the Pose regression archtiecture has two stages:
 
 The mean image and an output sample from subtracting from the mean image are shown below:
 ![Mean Image](mean_check.jpg)
+Mean Image
+
 ![Subtracted Image](data_check.jpg)
+
+Subtracted Image
 
 ## Results
 There are two evaluation metrics used for evaluation; Median Position Error and Median Orientation Error. The median position error represents the median deviation in position from the ground truth camera position in metres. The median orientation error represents the median angle devaition from the true camera orientation in degrees.
