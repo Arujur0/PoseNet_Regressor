@@ -31,6 +31,6 @@ Subtracted Image
 There are two evaluation metrics used for evaluation; Median Position Error and Median Orientation Error. The median position error represents the median deviation in position from the ground truth camera position in metres. The median orientation error represents the median angle devaition from the true camera orientation in degrees.
 
 The results obtained based on the above metrics are shown below:
-![Evaluation](eval.png)
+![Evaluation](results.png)
 
 
