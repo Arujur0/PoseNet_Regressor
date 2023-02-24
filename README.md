@@ -14,8 +14,8 @@ The neural network is trained on the KingsCollege Dataset. It is a large scale o
 The implementation of the Pose regression archtiecture has two stages:
 1. Pre-Processing: During the pre-processing phase three steps occur:
    1. Image resizing: Images are re-sized from 1920x1080 resolution to 480x256. 
-   2. Subtraction from Mean image: The mean image is calculated and each image in the dataset is subtracted from the mean image to          produce new images with reduced contrast.
-   3. Normalization and Random Cropping: The images are then normalized with a mean and standard deviation of 0.5. During the               training phase, a random 224x224 piece of the image is cropped out and used, while during testing a center 224x224 crop is used       on the image.This is done because the Inception architecture that runs as the backbone for the PoseNet only accepts images of         size 224x224.
+   2. Subtraction from Mean image: The mean image is calculated and each image in the dataset is subtracted from the mean image to      produce new images with reduced contrast.
+   3. Normalization and Random Cropping: The images are then normalized with a mean and standard deviation of 0.5. During the            training phase, a random 224x224 piece of the image is cropped out and used, while during testing a center 224x224 crop is used      on the image.This is done because the Inception architecture that runs as the backbone for the PoseNet only accepts images of        size 224x224.
 2. Model Training and Evaluation
 
 The PoseNet model was run for 240 epochs at a learning rate of 1e-4 on the Adam Optimizer. 
