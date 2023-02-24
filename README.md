@@ -19,7 +19,7 @@ The implementation of the Pose regression archtiecture has two stages:
 2. Model Training: The PoseNet model was run for 240 epochs at a learning rate of 1e-4, with a batch size of 100. Training was optimized using the Adam Optimizer. 
 
 The mean image and an output sample from subtracting from the mean image are shown below:
-![Mean Image](mean_check.png)
+![Mean Image](mean-check.png)
 ![Subtracted Image](data_check.png)
 
 ## Results
