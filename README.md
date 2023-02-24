@@ -20,6 +20,7 @@ The implementation of the Pose regression archtiecture has two stages:
 
 The mean image and an output sample from subtracting from the mean image are shown below:
 ![Mean Image](mean_check.jpg)
+
 Mean Image
 
 ![Subtracted Image](data_check.jpg)
